@@ -7,7 +7,7 @@ import time #frequency of checking the product price
 prices_list=[] #list of updated prices for the given time
 
 def check_price():
-    url = 'https://www.amazon.in/theproduct' #Paste the Product URL here
+    url = 'https://www.amazon.in/theproducturl' #Paste the Product URL here
     sauce= urllib.request.urlopen(url).read()
     soup = bs4.BeautifulSoup(sauce,"html.parser")
     prices = soup.find(id="priceblock_ourprice").get_text()
@@ -37,7 +37,7 @@ while True:
         flag = price_decrease_check(prices_list)
         if flag:
             decrease= prices_list[-1] - prices_list[-2]
-            message= "PRICE DECREASED CHECK! . The price decreased by {decrease} rupees.Check https://www.amazon.in/Samsung-Galaxy-Ocean-128GB-Storage/dp/B07HGGYWL6/ref=sr_1_1?dchild=1&keywords=poco+x2&qid=1598001158&sr=8-1"
+            message= "PRICE DECREASED CHECK! . The price decreased by {decrease} rupees.Check https://www.amazon.in/theproducturl"
             send_email(message)
     time.sleep(43000)
     count += 1        
