@@ -5,10 +5,10 @@ Simple Price Tracking App to track the decrease in  product prices ( Amazon )
  ### External libraries <br>
  
  
-  *   (***bs4*** -BeautifulSoup) <br>
-  *   (***urllib.request*** - Requests) <br>
-  *   (***smtplib*** - Smtp Mail Server) <br>
-  *   (***time*** - Check frequency) <br>
+  *   ***bs4*** -BeautifulSoup <br>
+  *   ***urllib.request*** - Requests <br>
+  *   ***smtplib*** - Smtp Mail Server <br>
+  *   ***time*** - Check frequency <br>
 
 
     
