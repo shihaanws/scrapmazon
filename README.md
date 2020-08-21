@@ -13,7 +13,9 @@ Simple Price Tracking App to track the decrease in  product prices ( Amazon )
 
     
 # Features
-* Periodical alerts sent to the described mail id
+
+* The script sends an email when the price for specific item you followed on Amazon drops.
+* Periodical checks for the decrease in price.
 
 #  Running Script
 
