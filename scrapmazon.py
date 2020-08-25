@@ -25,7 +25,7 @@ send_email("HELLO")    #SENDER MESSAGE
 
 
 def price_decrease_check(price_list):
-    if prices_list[-1] < prices_list[-2]: #checks whether the recent price in the list is lesser than the previous one
+    if prices_list[-1] < prices_list[-2]: #checks whether the recent price in the list is lesser than the previously updated one.
         return True
     else:
         return False    
